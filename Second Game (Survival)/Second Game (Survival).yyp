@@ -1,6 +1,7 @@
 {
   "resources": [
-    {"id":{"name":"Game","path":"objects/Game/Game.yy",},"order":0,},
+    {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":1,},
+    {"id":{"name":"Obj_Game","path":"objects/Obj_Game/Obj_Game.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
