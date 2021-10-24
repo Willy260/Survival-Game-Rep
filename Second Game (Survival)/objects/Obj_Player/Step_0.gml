@@ -10,12 +10,12 @@ key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 //calculate movement
 //need movement up and down???
 
-var move = (key_right - key_left - key_up - key_down); 
+var sidemove = (key_right - key_left); 
+var vertmove = (key_up - key_down);
 
-
-hsp = move * walksp;
+hsp = sidemove * walksp;
 //vsp = move * walksp;
-//vsp = vsp + grv;
+vsp = vertmove * walksp;
 
 //if (place_meeting(x,y+1,Obj_wall)) && (key_jump)
 //{
