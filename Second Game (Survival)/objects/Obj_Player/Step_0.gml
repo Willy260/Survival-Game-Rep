@@ -11,7 +11,7 @@ key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 //need movement up and down???
 
 var sidemove = (key_right - key_left); 
-var vertmove = (key_up - key_down);
+var vertmove = (key_down - key_up);
 
 hsp = sidemove * walksp;
 //vsp = move * walksp;
