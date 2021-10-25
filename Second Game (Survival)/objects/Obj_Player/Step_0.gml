@@ -10,6 +10,9 @@ key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 //calculate movement
 //need movement up and down???
 
+//other key assignments
+key_build = keyboard_check(ord("E"));
+
 var sidemove = (key_right - key_left); 
 var vertmove = (key_down - key_up);
 
@@ -47,3 +50,15 @@ if (place_meeting(x,y+vsp,Obj_Wall))
 }
 
 y = y + vsp;
+
+//wall building
+if (key_build == 1) && (wood >= 1) {
+	 instance_create_layer((x + 64), y , "Walls", Obj_Wall);
+	 
+	 wood = wood - 3;
+}
+
+
+	
+
+	
