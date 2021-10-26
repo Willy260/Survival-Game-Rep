@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_Enemy",
-    "path": "sprites/Spr_Enemy/Spr_Enemy.yy",
+    "name": "Spr_Bullet",
+    "path": "sprites/Spr_Bullet/Spr_Bullet.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_Enemy",
+  "name": "Obj_Bullet",
   "tags": [],
   "resourceType": "GMObject",
 }
