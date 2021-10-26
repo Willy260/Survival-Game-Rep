@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_wallBuild","path":"sprites/spr_wallBuild/spr_wallBuild.yy",},"order":1,},
+    {"id":{"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},"order":6,},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":1,},
     {"id":{"name":"Spr_PlayerR","path":"sprites/Spr_PlayerR/Spr_PlayerR.yy",},"order":4,},
     {"id":{"name":"Spr_Wall","path":"sprites/Spr_Wall/Spr_Wall.yy",},"order":2,},
