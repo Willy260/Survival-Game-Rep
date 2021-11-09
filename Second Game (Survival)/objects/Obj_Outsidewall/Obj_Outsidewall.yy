@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_Wall",
-    "path": "sprites/Spr_Wall/Spr_Wall.yy",
+    "name": "Spr_Outsidewall",
+    "path": "sprites/Spr_Outsidewall/Spr_Outsidewall.yy",
   },
   "solid": false,
   "visible": true,
