@@ -14,7 +14,9 @@ room_width/2, 500, "DESERT DEFENSE", 3, 3, 0, c,c,c,c, 1
 );
 draw_text(
 room_width/2, 600,
-@"DEFEND YOURSELF TO SURVIVE!!
+@"DEFEND YOURSELF 
+& 
+SCORE 1000 POINTS TO SURVIVE!!
 
 MOVE USING THE ARROW KEYS
 PRESS E TO PLACE WALLS
@@ -31,12 +33,19 @@ case Rm_win:
 draw_set_halign(fa_center);
 var c = c_lime;
 draw_text_transformed_color(
-room_width/2, 200, "YOU SURVIVED!", 3, 3, 0, c,c,c,c, 1
+room_width/2, 400, "YOU SURVIVED!", 3, 3, 0, c,c,c,c, 1
 );
 draw_text(
-room_width/2, 300,
-"PRESS ENTER TO RESTART"
+room_width/2, 500,
+@"PRESS ENTER TO RESTART
 
+
+Credits:
+Will Ledbetter
+Tathagat Prayaga
+Garrett Geisler
+Jackson Ashby
+"
 );
 draw_set_halign(fa_left);
 break;
