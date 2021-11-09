@@ -2,23 +2,23 @@
 // You can write your code in this editor
 switch(room){
 case Rm_game:
-draw_text(20, 20, "SCORE: "+string(score));
-draw_text(20, 40, "LIVES: "+string(lives));
+draw_text(40, 20, "SCORE: "+string(score));
+draw_text(40, 40, "LIVES: "+string(lives));
 break;
 
 case Rm_start:
 draw_set_halign(fa_center);
 var c = c_yellow;
 draw_text_transformed_color(
-room_width/2, 100, "SPACE ROCKS", 3, 3, 0, c,c,c,c, 1
+room_width/2, 500, "DESERT DEFENSE", 3, 3, 0, c,c,c,c, 1
 );
 draw_text(
-room_width/2, 200,
-@"Score 1,000 Points To Win!!
+room_width/2, 600,
+@"DEFEND YOURSELF TO SURVIVE!!
 
-UP: Move
-LEFT/RIGHT: Change Direction
-SPACE: Shoot
+MOVE USING THE ARROW KEYS
+PRESS E TO PLACE WALLS
+PICK UP WOOD TO BE ABLE TO PLACE MORE WALLS
 >> PRESS ENTER TO START<<
 "
 
