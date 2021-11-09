@@ -2,13 +2,13 @@
 // You can write your code in this editor
 switch(room){
 case Rm_game:
-draw_text(40, 20, "SCORE: "+string(score));
-draw_text(40, 40, "LIVES: "+string(lives));
+draw_text(100, 70, "SCORE: "+string(score));
+draw_text(100, 100, "LIVES: "+string(lives));
 break;
 
 case Rm_start:
 draw_set_halign(fa_center);
-var c = c_yellow;
+var c = c_teal;
 draw_text_transformed_color(
 room_width/2, 500, "DESERT DEFENSE", 3, 3, 0, c,c,c,c, 1
 );
