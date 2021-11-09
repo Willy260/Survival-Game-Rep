@@ -60,6 +60,33 @@ if (key_build == 1) && (wood >= 1) {
 }
 
 
+
+
+
+//horizontal collision outside wall
+if (place_meeting(x+hsp,y,Obj_Outsidewall))
+{
+	while (!place_meeting(x+sign(hsp),y,Obj_Outsidewall))
+		{
+		x = x + sign (hsp);	
+		}
+	hsp = 0;
+}
+
+x = x + hsp;
+
+
+//vertical collision outside wall
+if (place_meeting(x,y+vsp,Obj_Outsidewall))
+{
+	while (!place_meeting(x,y+sign(vsp),Obj_Outsidewall))
+		{
+		y = y + sign (vsp);	
+		}
+	vsp = 0;
+}
+
+y = y + vsp;
 	
 
 	
