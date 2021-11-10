@@ -1,1 +1,1 @@
-audio_play_sound(Gameaudio,1000,true)
+audio_play_sound(Mainmenu,1000,true)
