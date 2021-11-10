@@ -11,12 +11,16 @@ else if(distance_to_object(Obj_Player) > 500) {
 
 if (place_meeting(x,y,Obj_Wall))
 {
-	speed = 0;
-	
 	with(Obj_Wall) {
-	integrity = integrity - 0.5;
-	
+	health = health - 0.5;
 	}
+instance_destroy();
+	//speed = 0;
+	
+//	with(Obj_Wall) {
+//	health = health - 0.5;
+	
+//	}
 	
 }
 
