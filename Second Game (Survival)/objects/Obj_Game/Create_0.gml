@@ -3,4 +3,5 @@
 score = 0;
 lives = 3;
 
+global.wood = 18;
 draw_set_font(fnt_text)

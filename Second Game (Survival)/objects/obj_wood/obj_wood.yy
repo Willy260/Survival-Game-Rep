@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wallBuild",
-    "path": "sprites/spr_wallBuild/spr_wallBuild.yy",
+    "name": "spr_wood",
+    "path": "sprites/spr_wood/spr_wood.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wallBuild",
+  "name": "obj_wood",
   "tags": [],
   "resourceType": "GMObject",
 }

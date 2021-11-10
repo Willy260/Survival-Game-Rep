@@ -51,16 +51,13 @@ if (place_meeting(x,y+vsp,Obj_Wall))
 
 y = y + vsp;
 
-
-
-//wall building
-if (key_build == 1) && (wood >= 1) {
+/*//wall building
+if (key_build) && (global.wood >= 1) {
 	 instance_create_layer((x + 64), y , "Walls", Obj_Wall);
 	 
+	 global.wood= global.wood - 3;
 }
-
-
-
+*/
 
 
 //horizontal collision outside wall

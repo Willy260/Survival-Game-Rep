@@ -4,6 +4,7 @@ switch(room){
 case Rm_game:
 draw_text(100, 70, "SCORE: "+string(score));
 draw_text(100, 100, "LIVES: "+string(lives));
+draw_text(100, 130, "WOOD: "+string(global.wood));
 break;
 
 case Rm_start:
