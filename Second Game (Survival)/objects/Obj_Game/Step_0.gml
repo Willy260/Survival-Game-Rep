@@ -29,3 +29,19 @@ if(room == Rm_game){
 		global.wood = 0;
 	}
 } 
+
+if(keyboard_check_pressed(vk_shift)){
+	switch(room){
+		case Rm_start:
+		room_goto(Rm_Strategy);
+		break;
+	}
+}
+	
+	if(keyboard_check_pressed(vk_enter)){
+	switch(room){
+		case Rm_Strategy:
+		room_goto(Rm_start);
+		break;
+	}
+	}		

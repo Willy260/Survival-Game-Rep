@@ -70,4 +70,25 @@ room_width/2, 950,
 draw_set_halign(fa_left);
 break;
 
-}
+
+
+
+case Rm_Strategy:
+draw_set_halign(fa_center);
+var c = c_lime;
+draw_text_transformed_color(
+room_width/2, 400, "Strategy Guide!", 3, 3, 0, c,c,c,c, 1
+);
+draw_text(
+room_width/2, 500,
+@"PRESS ENTER TO RESTART
+
+
+Place walls using E
+But be ready to use your quickness to dodge enemies
+Enemies will only attack if you are close
+You have a gun but it has a long downtime after a shot 
+so use it wisely
+"
+);
+} 
