@@ -81,7 +81,7 @@ draw_text_transformed_color(
 room_width/2, 400, "Strategy Guide!", 3, 3, 0, c,c,c,c, 1
 );
 draw_text(
-room_width/2, 500,
+room_width/2, 600,
 @"PRESS ENTER TO RESTART
 
 
