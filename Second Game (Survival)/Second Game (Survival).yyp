@@ -4,6 +4,7 @@
     {"id":{"name":"Obj_Enemy","path":"objects/Obj_Enemy/Obj_Enemy.yy",},"order":4,},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},"order":1,},
     {"id":{"name":"Spr_Outsidewall","path":"sprites/Spr_Outsidewall/Spr_Outsidewall.yy",},"order":8,},
+    {"id":{"name":"Obj_Pause","path":"objects/Obj_Pause/Obj_Pause.yy",},"order":9,},
     {"id":{"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},"order":6,},
     {"id":{"name":"Obj_Bullet","path":"objects/Obj_Bullet/Obj_Bullet.yy",},"order":6,},
     {"id":{"name":"Mainmenu","path":"sounds/Mainmenu/Mainmenu.yy",},"order":1,},

@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-//spd = 3;
 
-if (global.pause) exit;
-
-
-hsp = 0;
-vsp = 0;
-walksp = 8;
-
-
-
+if (global.pause == 0)
+{
+	global.pause = 1;
+}
+else
+{
+	global.pause = 0;
+}
