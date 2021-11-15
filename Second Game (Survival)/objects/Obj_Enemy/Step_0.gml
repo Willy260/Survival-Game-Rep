@@ -1,6 +1,7 @@
-// Going after player
-if (global.pause) exit;
 
+if (global.pause) exit; 
+
+// Going after player
 if(distance_to_object(Obj_Player) < 500) {
 	move_towards_point(Obj_Player.x, Obj_Player.y, 1);
 }

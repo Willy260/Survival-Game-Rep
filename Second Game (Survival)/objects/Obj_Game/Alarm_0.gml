@@ -16,4 +16,5 @@ if(choose(0,1) == 0){
 
 instance_create_layer(xx, yy, "Instances", Obj_Enemy);
 
-alarm[0] = 4*room_speed; 
+//alarm[0] = 4*room_speed; 
+alarm[0] = 100 
