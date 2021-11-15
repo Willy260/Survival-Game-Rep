@@ -10,3 +10,6 @@ draw_set_font(fnt_text)
 paused = false;
 //paused_surf = -1; 
 alarm[2] = 30
+
+time = 1000;
+timer = time;
