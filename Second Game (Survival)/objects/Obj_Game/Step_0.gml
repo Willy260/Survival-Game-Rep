@@ -48,14 +48,18 @@ if(keyboard_check_pressed(vk_shift)){
 	}
 	}		
 	
-	
-if (timer <= 1) {
+
+//Spawn wave 1
+if (timer <= 19000) {
 	timer = time;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
 		//audio_stop_sound(msc_song);
 	
 	//audio_play_sound(msc_song, 2, true);
+	if (timer <= 8900){ 
+		exit;
+	}
 repeat(20){	
 	var xx = choose(
 	irandom_range(200, room_width*0.3), 
@@ -72,4 +76,40 @@ alarm[0] = 100;
 }
 	
 	
+}
+
+//win from timer
+if(room == Rm_game){
+	if(timer = 9000){
+		room_goto(Rm_win);
+		//audio_play_sound(snd_win, 1, false); 
+	}
+	
+	
+//Spawn wave 2
+	if (timer <= 14000) {
+	timer = time;
+	if(room == Rm_game){
+	//if(audio_is_playing(msc_song)){
+		//audio_stop_sound(msc_song);
+	
+	//audio_play_sound(msc_song, 2, true);
+	if (timer <= 8900){ 
+		exit;
+	}
+repeat(20){	
+	var xx = choose(
+	irandom_range(200, room_width*0.3), 
+	irandom_range(room_width*0.7, room_width)
+	);
+	var yy = choose(
+	irandom_range(200, room_height*0.3), 
+	irandom_range(room_height*0.7, room_height)
+	);
+	instance_create_layer(xx, yy, "Instances", Obj_Enemy);
+}
+
+alarm[0] = 100;
+}
+}
 }
