@@ -25,6 +25,7 @@ if(room == Rm_game){
 	if(lives <= 0){
 		room_goto(Rm_game_over);
 		//audio_play_sound(snd_lose, 1, false);
+		
 	}
 	
 	if(global.wood < 0) {
@@ -87,7 +88,7 @@ if(room == Rm_game){
 	
 	
 //Spawn wave 2
-	if (timer <= 14000) {
+	if (timer <= 10000) {
 	timer = time;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
