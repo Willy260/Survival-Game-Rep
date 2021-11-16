@@ -70,6 +70,7 @@ repeat(20){
 	irandom_range(room_height*0.7, room_height)
 	);
 	instance_create_layer(xx, yy, "Instances", Obj_Enemy);
+	instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
 }
 
 alarm[0] = 100;
@@ -107,6 +108,7 @@ repeat(20){
 	irandom_range(room_height*0.7, room_height)
 	);
 	instance_create_layer(xx, yy, "Instances", Obj_Enemy);
+	instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
 }
 
 alarm[0] = 100;
