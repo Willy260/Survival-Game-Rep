@@ -1,5 +1,5 @@
 /// Gun Logic
-
+if (!global.pause) {
 if(!instance_exists(Obj_Player)){
 	instance_destroy();
 }
@@ -35,4 +35,6 @@ image_yscale = -1;
 else
 {
 image_yscale = 1;	
+}
+
 }

@@ -1,5 +1,5 @@
 
-if (global.pause) exit; 
+if (!global.pause) {; 
 
 // Going after player
 if(distance_to_object(Obj_Player) < 500) {
@@ -26,7 +26,7 @@ instance_destroy();
 //	}
 	
 }
-
+}
 
 
 

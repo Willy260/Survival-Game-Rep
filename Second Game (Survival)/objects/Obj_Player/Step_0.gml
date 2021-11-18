@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!global.pause) {
 //get player movement
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -86,4 +87,4 @@ if (place_meeting(x,y+vsp,Obj_Outsidewall))
 y = y + vsp;
 	
 
-	
+}

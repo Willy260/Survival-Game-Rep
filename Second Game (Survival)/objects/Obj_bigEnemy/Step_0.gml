@@ -1,5 +1,5 @@
 
-if (global.pause) exit; 
+if (!global.pause) { 
 
 // Going after player
 move_towards_point(Obj_Player.x, Obj_Player.y, 1);
@@ -19,7 +19,7 @@ instance_destroy();
 //	}
 	
 }
-
+}
 
 
 
