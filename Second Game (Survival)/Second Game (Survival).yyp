@@ -26,6 +26,7 @@
     {"id":{"name":"Spr_Bullet","path":"sprites/Spr_Bullet/Spr_Bullet.yy",},"order":7,},
     {"id":{"name":"Obj_Outsidewall","path":"objects/Obj_Outsidewall/Obj_Outsidewall.yy",},"order":7,},
     {"id":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},"order":3,},
+    {"id":{"name":"Rm_lvl2","path":"rooms/Rm_lvl2/Rm_lvl2.yy",},"order":5,},
     {"id":{"name":"obj_wallOutline","path":"objects/obj_wallOutline/obj_wallOutline.yy",},"order":8,},
     {"id":{"name":"Spr_Player","path":"sprites/Spr_Player/Spr_Player.yy",},"order":3,},
     {"id":{"name":"Rm_win","path":"rooms/Rm_win/Rm_win.yy",},"order":2,},
@@ -57,6 +58,7 @@
     {"roomId":{"name":"Rm_win","path":"rooms/Rm_win/Rm_win.yy",},},
     {"roomId":{"name":"Rm_game_over","path":"rooms/Rm_game_over/Rm_game_over.yy",},},
     {"roomId":{"name":"Rm_Strategy","path":"rooms/Rm_Strategy/Rm_Strategy.yy",},},
+    {"roomId":{"name":"Rm_lvl2","path":"rooms/Rm_lvl2/Rm_lvl2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
