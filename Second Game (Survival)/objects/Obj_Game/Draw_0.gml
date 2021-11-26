@@ -2,6 +2,7 @@
 // You can write your code in this editor
 switch(room){
 case Rm_game:
+var c = c_gray
 draw_text(100, 70, "SCORE: "+string(score));
 draw_text(100, 100, "LIVES: "+string(lives));
 draw_text(100, 130, "WOOD: "+string(global.wood));
