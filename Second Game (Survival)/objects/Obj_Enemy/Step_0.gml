@@ -1,4 +1,8 @@
 
+if (global.pause = true){
+	speed = 0;
+}
+
 if (!global.pause) {; 
 
 // Going after player

@@ -61,6 +61,7 @@ if (timer <= 0) {
 	//if (timer <= 0){ 
 	//	exit;
 	//}
+	if (!global.pause){
 repeat(20){	
 	var xx = choose(
 	irandom_range(200, room_width*0.3), 
@@ -73,6 +74,7 @@ repeat(20){
 	instance_create_layer(xx, yy, "Instances", Obj_Enemy);
 	instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
 }
+	}
 
 alarm[0] = 100;
 }
@@ -112,7 +114,14 @@ repeat(0){
 	instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
 }
 
+//if (place_meeting(x,y,Obj_Enemy))
+//{
+	//with(Obj_Player) {
+	//timer = time;
+	//}
+
 alarm[0] = 100;
 }
 }
 }
+//}

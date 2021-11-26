@@ -11,7 +11,7 @@ paused = false;
 //paused_surf = -1; 
 alarm[2] = 30
 
-//Old timer
+
 time = 1000;
 timer = time;
 
