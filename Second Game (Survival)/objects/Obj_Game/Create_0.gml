@@ -12,7 +12,7 @@ paused = false;
 alarm[2] = 30
 
 //Old timer
-time = 20000;
+time = 1000;
 timer = time;
 
 //New timer

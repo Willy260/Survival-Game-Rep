@@ -51,16 +51,16 @@ if(keyboard_check_pressed(vk_shift)){
 	
 
 //Spawn wave 1
-if (timer <= 19000) {
+if (timer <= 0) {
 	timer = time;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
 		//audio_stop_sound(msc_song);
 	
 	//audio_play_sound(msc_song, 2, true);
-	if (timer <= 8900){ 
-		exit;
-	}
+	//if (timer <= 0){ 
+	//	exit;
+	//}
 repeat(20){	
 	var xx = choose(
 	irandom_range(200, room_width*0.3), 
@@ -81,25 +81,25 @@ alarm[0] = 100;
 }
 
 //win from timer
-if(room == Rm_game){
-	if(timer = 9000){
-		room_goto(Rm_win);
+//if(room == Rm_game){
+//	if(timer = ){
+//		room_goto(Rm_win);
 		//audio_play_sound(snd_win, 1, false); 
-	}
+	//}
 	
 	
 //Spawn wave 2
-	if (timer <= 10000) {
+	if (timer <= 0) {
 	timer = time;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
 		//audio_stop_sound(msc_song);
 	
 	//audio_play_sound(msc_song, 2, true);
-	if (timer <= 8900){ 
+	if (timer <= 0){ 
 		exit;
 	}
-repeat(20){	
+repeat(0){	
 	var xx = choose(
 	irandom_range(200, room_width*0.3), 
 	irandom_range(room_width*0.7, room_width)
@@ -113,7 +113,6 @@ repeat(20){
 }
 
 alarm[0] = 100;
-}
 }
 }
 }
