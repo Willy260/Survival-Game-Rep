@@ -2,7 +2,7 @@
 if (!global.pause) {; 
 
 // Going after player
-if(distance_to_object(Obj_Player) < 500) {
+if(distance_to_object(Obj_Player) < 10000) {
 	move_towards_point(Obj_Player.x, Obj_Player.y, 1);
 }
 else if(distance_to_object(Obj_Player) > 500) {

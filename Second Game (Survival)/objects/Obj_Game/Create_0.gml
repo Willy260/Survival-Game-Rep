@@ -11,5 +11,12 @@ paused = false;
 //paused_surf = -1; 
 alarm[2] = 30
 
+//Old timer
 time = 20000;
 timer = time;
+
+//New timer
+//room_speed = 30;
+//timer = room_speed * 5;
+
+//alarm[3] = room_speed * 5;
