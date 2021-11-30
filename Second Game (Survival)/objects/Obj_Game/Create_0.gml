@@ -15,6 +15,9 @@ alarm[2] = 30
 time = 1000;
 timer = time;
 
+is_music_playing = false;
+current_track = Mainmenu;
+
 //New timer
 //room_speed = 30;
 //timer = room_speed * 5;
