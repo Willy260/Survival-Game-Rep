@@ -62,7 +62,7 @@ if (timer <= 0) {
 	//	exit;
 	//}
 	if (!global.pause){
-repeat(20){	
+repeat(6){	
 	var xx = choose(
 	irandom_range(200, room_width*0.3), 
 	irandom_range(room_width*0.7, room_width)
