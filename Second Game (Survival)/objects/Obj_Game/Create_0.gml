@@ -12,7 +12,7 @@ paused = false;
 alarm[2] = 30
 
 
-time = 1000;
+time = 2000;
 timer = time;
 
 is_music_playing = false;

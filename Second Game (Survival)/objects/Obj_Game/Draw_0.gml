@@ -7,6 +7,24 @@ draw_text(100, 70, "SCORE: "+string(score));
 draw_text(100, 100, "LIVES: "+string(lives));
 draw_text(100, 130, "WOOD: "+string(global.wood));
 draw_text(100, 160, "TIME TO WAVE: "+string(timer));
+if (score >= 0 && score <= 50){
+draw_text(100, 200, "LVL: BEGINNER");
+}
+if (score >= 100 && score <= 150){
+draw_text(100, 200, "LVL: NOVICE");
+}
+if (score >= 200 && score <= 250){
+draw_text(100, 200, "LVL: WEEKEND PLAYER");
+}
+if (score >= 300 && score <= 350){
+draw_text(100, 200, "LVL: INTERMEDIATE");
+}
+if (score >= 600 && score <= 650){
+draw_text(100, 200, "LVL: EXPERT");
+}
+if (score >= 800 && score <= 999){
+draw_text(100, 200, "LVL: SURVIVOR");
+}
 break;
 
 case Rm_start:
@@ -93,5 +111,4 @@ You have a gun but it has a long downtime after a shot
 so use it wisely
 "
 );
-
 } 
