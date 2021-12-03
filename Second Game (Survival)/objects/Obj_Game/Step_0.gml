@@ -48,7 +48,7 @@ if(keyboard_check_pressed(vk_shift)){
 		break;
 	}
 	}		
-	
+
 
 //Spawn wave 1
 if (timer <= 0) {

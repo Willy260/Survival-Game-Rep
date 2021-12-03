@@ -40,7 +40,7 @@ room_width/2, 600,
 SCORE 1000 POINTS, AND KILL THE WAVES TO SURVIVE!!
 
 MOVE USING THE ARROW KEYS OR W,A,S,D
-PRESS E TO PLACE WALLS
+PRESS E AND HOVER MOUSE OVER GRID TO PLACE WALLS
 PICK UP WOOD TO BE ABLE TO PLACE MORE WALLS
 CLICK THE MOUSE TO SHOOT
 >> PRESS ENTER TO START<<
@@ -105,7 +105,8 @@ room_width/2, 600,
 @"PRESS ENTER TO RESTART
 
 
-Place walls using E
+While holding down E a grid will appear, 
+Hover your mouse over the desired spot and let go of E to build
 But be ready to use your quickness to dodge enemies
 You have a gun but it has a long downtime after a shot 
 so use it wisely
