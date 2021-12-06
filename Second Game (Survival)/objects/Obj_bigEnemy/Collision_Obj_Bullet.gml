@@ -3,16 +3,11 @@
 if(speed > 0) {
 	instance_destroy()
 	
-	instance_create_layer(x, y, "Materials", obj_wood);
+	repeat(2) {
+		instance_create_layer(x, y, "Instances", Obj_Enemy);
+	}
 }
 
-//with(other){
-	//instance_destroy();
-	
-	//if(sprite_index == Spr_Enemy){
-	//	repeat(2){
-	//	var new_enemy = instance_create_layer(x,y,"Instances", Obj_Enemy);
-	//	new_enemy.sprite_index = Spr_Enemy;
-	//	}
-//	}
-// }
+with(other) {
+	instance_destroy();
+}
