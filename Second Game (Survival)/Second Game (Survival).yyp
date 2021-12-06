@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Playerdeath","path":"sounds/Playerdeath/Playerdeath.yy",},"order":4,},
     {"id":{"name":"Obj_Gun","path":"objects/Obj_Gun/Obj_Gun.yy",},"order":5,},
     {"id":{"name":"Obj_Enemy","path":"objects/Obj_Enemy/Obj_Enemy.yy",},"order":4,},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},"order":1,},
@@ -21,7 +22,6 @@
     {"id":{"name":"Obj_Game","path":"objects/Obj_Game/Obj_Game.yy",},"order":0,},
     {"id":{"name":"Obj_Wall","path":"objects/Obj_Wall/Obj_Wall.yy",},"order":2,},
     {"id":{"name":"spr_wallOutline","path":"sprites/spr_wallOutline/spr_wallOutline.yy",},"order":10,},
-    {"id":{"name":"Music","path":"objects/Music/Music.yy",},"order":0,},
     {"id":{"name":"Rm_game_over","path":"rooms/Rm_game_over/Rm_game_over.yy",},"order":3,},
     {"id":{"name":"Spr_Bullet","path":"sprites/Spr_Bullet/Spr_Bullet.yy",},"order":7,},
     {"id":{"name":"Obj_Outsidewall","path":"objects/Obj_Outsidewall/Obj_Outsidewall.yy",},"order":7,},
@@ -32,6 +32,7 @@
     {"id":{"name":"Rm_win","path":"rooms/Rm_win/Rm_win.yy",},"order":2,},
     {"id":{"name":"Gameaudio","path":"sounds/Gameaudio/Gameaudio.yy",},"order":2,},
     {"id":{"name":"Spr_bigEnemy","path":"sprites/Spr_bigEnemy/Spr_bigEnemy.yy",},"order":11,},
+    {"id":{"name":"Gun","path":"sounds/Gun/Gun.yy",},"order":3,},
     {"id":{"name":"Rm_game","path":"rooms/Rm_game/Rm_game.yy",},"order":0,},
   ],
   "Options": [

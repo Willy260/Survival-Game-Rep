@@ -4,7 +4,6 @@
 
 if (global.pause) exit;
 
-
 hsp = 0;
 vsp = 0;
 walksp = 8;
