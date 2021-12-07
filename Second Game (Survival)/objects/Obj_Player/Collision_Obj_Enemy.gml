@@ -8,4 +8,3 @@ with(Obj_Game){
 
 
 instance_destroy();
-audio_play_sound(Playerdeath, 1, false);
