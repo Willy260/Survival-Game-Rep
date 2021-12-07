@@ -7,12 +7,5 @@ with(Obj_Game){
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 instance_destroy();
-=======
-instance_destroy();
->>>>>>> 8e42b0755dc57295960fd24b29136fa389a6d01c
-=======
-instance_destroy();
->>>>>>> 8e42b0755dc57295960fd24b29136fa389a6d01c
+

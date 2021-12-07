@@ -22,15 +22,9 @@ if (mouse_check_button(mb_left) and (firingdelay < 0))
 	speed = 25;	
 	direction = other.image_angle + random_range(-3,3);
 	image_angle = direction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-=======
+
+
 	audio_play_sound(Gun, 1, false);
->>>>>>> 8e42b0755dc57295960fd24b29136fa389a6d01c
-=======
-	audio_play_sound(Gun, 1, false);
->>>>>>> 8e42b0755dc57295960fd24b29136fa389a6d01c
 	}
 	
 }
