@@ -11,23 +11,23 @@ if (score >= 0 && score <= 50){
 draw_text(100, 200, "LVL: BEGINNER");
 draw_sprite(Spr_beginner, 0, 380, 200);
 }
-if (score >= 100 && score <= 150){
+if (score >= 300 && score <= 150){
 draw_text(100, 200, "LVL: NOVICE");
 draw_sprite(Spr_Novice, 0, 380, 200);
 }
-if (score >= 200 && score <= 250){
+if (score >= 600 && score <= 250){
 draw_text(100, 200, "LVL: WEEKEND PLAYER");
-draw_sprite(Spr_WeekendPlayer, 0, 450, 200);
+draw_sprite(Spr_WeekendPlayer, 0, 525, 200);
 }
-if (score >= 300 && score <= 350){
+if (score >= 900 && score <= 350){
 draw_text(100, 200, "LVL: INTERMEDIATE");
-draw_sprite(Spr_Intermediate, 0, 380, 200);
+draw_sprite(Spr_Intermediate, 0, 500, 200);
 }
-if (score >= 600 && score <= 650){
+if (score >= 1500 && score <= 650){
 draw_text(100, 200, "LVL: EXPERT");
 draw_sprite(Spr_Expert, 0, 380, 200);
 }
-if (score >= 800 && score <= 999){
+if (score >= 1800 && score <= 999){
 draw_text(100, 200, "LVL: SURVIVOR");
 draw_sprite(Spr_Survivor, 0, 380, 200);
 }
