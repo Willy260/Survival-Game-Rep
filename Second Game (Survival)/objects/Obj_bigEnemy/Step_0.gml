@@ -4,9 +4,21 @@ if (global.pause = true){
 }
 
 if (!global.pause) { 
+	
+if(global.wave > 3) {
+	walksp = 0.75;
+}
+
+if(global.wave > 6) {
+	walksp = 1;
+}
+
+if(global.wave > 9) {
+	walksp = 1.2;
+}
 
 if(distance_to_object(Obj_Player) < 10000) {
-	move_towards_point(Obj_Player.x, Obj_Player.y, 0.5);
+	move_towards_point(Obj_Player.x, Obj_Player.y, walksp);
 }
 else if(distance_to_object(Obj_Player) > 500) {
 	x = x
@@ -14,36 +26,7 @@ else if(distance_to_object(Obj_Player) > 500) {
 	speed = 0;
 }
 
-if (place_meeting(x,y,Obj_Wall))
-{
-	with(Obj_Wall) {
-	health = health - 0.5;
-	}
-instance_destroy();
 
-
-
-
-
-
-// Going after player
-//move_towards_point(Obj_Player.x, Obj_Player.y, 1);
-
-
-//if (place_meeting(x,y,Obj_Wall))
-//{
-	//with(Obj_Wall) {
-	//health = 0;
-	//
-//instance_destroy();
-	//speed = 0;
-	
-//	with(Obj_Wall) {
-//	health = health - 0.5;
-	
-//	}
-	
-}
 }
 
 

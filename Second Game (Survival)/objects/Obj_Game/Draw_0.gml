@@ -3,35 +3,46 @@
 switch(room){
 case Rm_game:
 var c = c_gray
-draw_text(100, 70, "SCORE: "+string(score));
+draw_text(100, 70, "SCORE: "+string(global.score));
 draw_text(100, 100, "LIVES: "+string(lives));
-draw_text(100, 130, "WOOD: "+string(global.wood));
+draw_text(100, 130, "IRON: "+string(global.wood));
 draw_text(100, 160, "TIME TO WAVE: "+string(timer));
-if (score >= 0 && score <= 50){
+if (global.wave >= 0 && global.wave<= 1){
 draw_text(100, 200, "LVL: BEGINNER");
 draw_sprite(Spr_beginner, 0, 380, 200);
 }
-if (score >= 300 && score <= 150){
+if (global.wave >= 1 && global.wave <= 2){
 draw_text(100, 200, "LVL: NOVICE");
 draw_sprite(Spr_Novice, 0, 380, 200);
 }
-if (score >= 600 && score <= 250){
+if (global.wave >= 3 && global.wave <= 4){
 draw_text(100, 200, "LVL: WEEKEND PLAYER");
 draw_sprite(Spr_WeekendPlayer, 0, 525, 200);
 }
-if (score >= 900 && score <= 350){
+if (global.wave >= 4 && global.wave <= 5){
 draw_text(100, 200, "LVL: INTERMEDIATE");
 draw_sprite(Spr_Intermediate, 0, 500, 200);
 }
-if (score >= 1500 && score <= 650){
+if (global.wave >= 6 && global.wave <= 7){
 draw_text(100, 200, "LVL: EXPERT");
 draw_sprite(Spr_Expert, 0, 380, 200);
 }
-if (score >= 1800 && score <= 999){
+if (global.wave >= 9){
 draw_text(100, 200, "LVL: SURVIVOR");
 draw_sprite(Spr_Survivor, 0, 380, 200);
 }
 break;
+
+case rm_characters:
+	draw_sprite(spr_playerY, 0, room_width*0.25, room_height*0.5);
+	draw_sprite(Spr_PlayerG, 0, room_width*0.5, room_height*0.5);
+	draw_sprite(Spr_Player, 0, room_width*0.75, room_height*0.5);
+	draw_text_transformed(100,room_height*0.75,"Press the number that goes with the character you want and press enter!", 0.9, 0.9, 0);
+	draw_text(room_width*0.25, room_height*0.6,"1");
+	draw_text(room_width*0.5, room_height*0.6,"2");
+	draw_text(room_width*0.75, room_height*0.6,"3");
+	break;
+
 
 case Rm_start:
 draw_set_halign(fa_center);
@@ -43,11 +54,12 @@ draw_text(
 room_width/2, 600,
 @"DEFEND YOURSELF 
 & 
-SCORE 2000 POINTS, AND KILL THE WAVES TO SURVIVE!!
+SCORE 1000 POINTS, AND KILL THE WAVES TO SURVIVE!!
+BUT BE CAREFUL, DIE AND THE ENEMIES WILL CHIP AWAY AT YOUR POINTS :(
 
 MOVE USING THE ARROW KEYS OR W,A,S,D
 PRESS E AND HOVER MOUSE OVER GRID TO PLACE WALLS
-PICK UP WOOD TO BE ABLE TO PLACE MORE WALLS
+PICK UP IRON TO BE ABLE TO PLACE MORE WALLS
 CLICK THE MOUSE TO SHOOT
 >> PRESS ENTER TO START<<
 >>>PRESS SHIFT FOR THE STREATEGY GUIDE<<<
@@ -86,7 +98,7 @@ room_width/2, 700, "YOU FAILED!", 3, 3, 0, c,c,c,c, 1
 );
 draw_text(
 room_width/2, 850,
-"FINAL SCORE: "+string(score)
+"FINAL SCORE: "+string(global.score)
 
 );
 

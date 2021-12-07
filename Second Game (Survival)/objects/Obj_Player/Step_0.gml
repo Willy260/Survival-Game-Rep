@@ -12,7 +12,7 @@ key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 //need movement up and down???
 
 //other key assignments
-key_build = keyboard_check(ord("E"));
+
 
 var sidemove = (key_right - key_left); 
 var vertmove = (key_down - key_up);

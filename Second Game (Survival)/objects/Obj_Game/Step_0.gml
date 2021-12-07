@@ -6,6 +6,10 @@ timer --;
 if(keyboard_check_pressed(vk_enter)){
 	switch(room){
 		case Rm_start:
+		room_goto(rm_characters);
+		break;
+		
+		case rm_characters:
 		room_goto(Rm_game);
 		break;
 		
@@ -16,8 +20,22 @@ if(keyboard_check_pressed(vk_enter)){
 }
 }
 
+
+if(room == rm_characters){
+	if(keyboard_check(ord("2"))){
+		object_set_sprite(Obj_Player, Spr_PlayerG);
+	}
+	if(keyboard_check(ord("1"))){
+		object_set_sprite(Obj_Player, spr_playerY);
+	}
+	if(keyboard_check(ord("3"))){
+		object_set_sprite(Obj_Player, Spr_Player);
+	}	
+} 
+	
+
 if(room == Rm_game){
-	if(score >= 2000){
+	if(global.score >= 1000){
 		room_goto(Rm_win);
 		//audio_play_sound(snd_win, 1, false); 
 	}
@@ -26,6 +44,10 @@ if(room == Rm_game){
 		room_goto(Rm_game_over);
 		//audio_play_sound(snd_lose, 1, false);
 		
+	}
+	
+	if(global.score < 0) {
+		global.score = 0;
 	}
 	
 	if(global.wood < 0) {
@@ -47,12 +69,14 @@ if(keyboard_check_pressed(vk_shift)){
 		room_goto(Rm_start);
 		break;
 	}
-	}		
+	}	
+	
 
 
 //Spawn wave 1
-if (timer <= 0) {
+if (timer <= 0) && (global.wave == 0.5) {
 	timer = time;
+	global.wave = 1;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
 		//audio_stop_sound(msc_song);
@@ -91,8 +115,9 @@ alarm[0] = 100;
 	
 	
 //Spawn wave 2
-	if (timer <= 0) {
+	if (timer <= 0) && (global.wave >= 1) {
 	timer = time;
+	++ global.wave;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
 		//audio_stop_sound(msc_song);
@@ -101,18 +126,18 @@ alarm[0] = 100;
 	if (timer <= 0){ 
 		exit;
 	}
-repeat(0){	
-	var xx = choose(
-	irandom_range(200, room_width*0.3), 
-	irandom_range(room_width*0.7, room_width)
-	);
-	var yy = choose(
-	irandom_range(200, room_height*0.3), 
-	irandom_range(room_height*0.7, room_height)
-	);
-	instance_create_layer(xx, yy, "Instances", Obj_Enemy);
-	instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
-}
+		repeat(5){	
+			var xx = choose(
+			irandom_range(200, room_width*0.3), 
+			irandom_range(room_width*0.7, room_width)
+			);
+			var yy = choose(
+			irandom_range(200, room_height*0.3), 
+			irandom_range(room_height*0.7, room_height)
+			);
+			instance_create_layer(xx, yy, "Instances", Obj_Enemy);
+			instance_create_layer(xx, yy, "Instances", Obj_bigEnemy);
+		}
 
 //if (place_meeting(x,y,Obj_Enemy))
 //{

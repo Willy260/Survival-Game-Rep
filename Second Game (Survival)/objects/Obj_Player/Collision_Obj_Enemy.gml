@@ -7,5 +7,8 @@ with(Obj_Game){
 }
 
 
+<<<<<<< HEAD
 instance_destroy();
-audio_play_sound(Playerdeath, 1, false);
+=======
+instance_destroy();
+>>>>>>> 8e42b0755dc57295960fd24b29136fa389a6d01c
