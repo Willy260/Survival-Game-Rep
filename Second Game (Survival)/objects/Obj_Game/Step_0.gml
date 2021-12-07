@@ -51,7 +51,7 @@ if(keyboard_check_pressed(vk_shift)){
 
 
 //Spawn wave 1
-if (timer <= 99000) {
+if (timer <= 0) {
 	timer = time;
 	if(room == Rm_game){
 	//if(audio_is_playing(msc_song)){
