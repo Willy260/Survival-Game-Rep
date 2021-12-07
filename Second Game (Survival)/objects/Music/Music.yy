@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Rooms/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "Music",

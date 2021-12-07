@@ -14,7 +14,7 @@
   "duration": 55.0,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Rooms/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "Gameaudio",

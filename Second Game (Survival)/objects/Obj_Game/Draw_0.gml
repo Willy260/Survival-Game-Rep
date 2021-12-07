@@ -9,21 +9,27 @@ draw_text(100, 130, "WOOD: "+string(global.wood));
 draw_text(100, 160, "TIME TO WAVE: "+string(timer));
 if (score >= 0 && score <= 50){
 draw_text(100, 200, "LVL: BEGINNER");
+draw_sprite(Spr_beginner, 0, 380, 200);
 }
 if (score >= 100 && score <= 150){
 draw_text(100, 200, "LVL: NOVICE");
+draw_sprite(Spr_Novice, 0, 380, 200);
 }
 if (score >= 200 && score <= 250){
 draw_text(100, 200, "LVL: WEEKEND PLAYER");
+draw_sprite(Spr_WeekendPlayer, 0, 450, 200);
 }
 if (score >= 300 && score <= 350){
 draw_text(100, 200, "LVL: INTERMEDIATE");
+draw_sprite(Spr_Intermediate, 0, 380, 200);
 }
 if (score >= 600 && score <= 650){
 draw_text(100, 200, "LVL: EXPERT");
+draw_sprite(Spr_Expert, 0, 380, 200);
 }
 if (score >= 800 && score <= 999){
 draw_text(100, 200, "LVL: SURVIVOR");
+draw_sprite(Spr_Survivor, 0, 380, 200);
 }
 break;
 
@@ -37,7 +43,7 @@ draw_text(
 room_width/2, 600,
 @"DEFEND YOURSELF 
 & 
-SCORE 1000 POINTS, AND KILL THE WAVES TO SURVIVE!!
+SCORE 2000 POINTS, AND KILL THE WAVES TO SURVIVE!!
 
 MOVE USING THE ARROW KEYS OR W,A,S,D
 PRESS E AND HOVER MOUSE OVER GRID TO PLACE WALLS

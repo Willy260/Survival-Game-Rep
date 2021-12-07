@@ -14,7 +14,7 @@
   "duration": 87.5426,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Rooms/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "Mainmenu",
